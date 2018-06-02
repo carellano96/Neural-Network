@@ -7,13 +7,21 @@ p3  p4
 
 If the value is 1, the pixel is completely on. If the value os 0, the pixel is completely off. However, the values can vary between 0 and 1. For example, the number 1 is as shown like this:
 
-0  1
-0  1
+0   1<br/>
+0   1
 
 This shows the number 1 shown through two pixels on the far right turned on. The number 1 can also be:
 
-0.10  0.65
-0.08  0.74
+0.10   0.65<br/>
+0.08   0.74
+
+The following is *not* 1 because the incorrect pixels are turned on:
+
+1   1<br/>
+0   1
+
+0.75   .98<br/>
+0.65   .10
 
 This is because the leftmost pixels, while slightly on, have values small enough to be treated as off. The rightmost pixels, while not entirely on, have high enough values to be treated as on, thus creating the number 1.
 
