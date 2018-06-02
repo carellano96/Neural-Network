@@ -4,9 +4,8 @@
 # In[1]:
 
 
-#get_ipython().run_line_magic('matplotlib', 'inline')
-import pip
-pip.main(["install","numpy"])
+get_ipython().run_line_magic('matplotlib', 'inline')
+
 
 # In[3]:
 
